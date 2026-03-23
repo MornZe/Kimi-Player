@@ -4,13 +4,10 @@
   "version": "0.1.0",
   "identifier": "com.kimi-player.app",
   "build": {
-    "frontend": {
-      "root": "..",
-      "dist": "../dist",
-      "devUrl": "http://localhost:5173",
-      "buildBeforeDev": false,
-      "buildBeforeBuild": true
-    }
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
   },
   "app": {
     "withGlobalTauri": true,
