@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Kimi-Player",
+  "version": "0.1.0",
+  "identifier": "com.kimi-player.app",
+  "build": {
+    "frontend": {
+      "root": ".",
+      "dist": "dist",
+      "devUrl": "http://localhost:5173",
+      "buildBeforeDev": false,
+      "buildBeforeBuild": true
+    },
+    "backend": {
+      "useBeforeBuildCommand": false
+    }
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Kimi Player",
+        "width": 1200,
+        "height": 800,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Entertainment",
+    "shortDescription": "Kimi Player - A modern media player",
+    "longDescription": "Kimi Player is a modern cross-platform media player built with Tauri and React.",
+    "copyright": "© 2024 Kimi Player",
+    "resources": []
+  }
+}
