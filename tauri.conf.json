@@ -10,9 +10,6 @@
       "devUrl": "http://localhost:5173",
       "buildBeforeDev": false,
       "buildBeforeBuild": true
-    },
-    "backend": {
-      "useBeforeBuildCommand": false
     }
   },
   "app": {
@@ -44,7 +41,11 @@
     "category": "Entertainment",
     "shortDescription": "Kimi Player - A modern media player",
     "longDescription": "Kimi Player is a modern cross-platform media player built with Tauri and React.",
-    "copyright": "© 2024 Kimi Player",
-    "resources": []
+    "copyright": "© 2024 Kimi Player"
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "identifier": "com.kimi-player.app",
+  "label": "Kimi Player",
+  "icon": {
+    "square": "icons/32x32.png",
+    "mask": "icons/128x128.png"
+  },
+  "version": "0.1.0",
+  "versionCode": 1,
+  "minSdkVersion": 24,
+  "targetSdkVersion": 34,
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "features": [
+    "android.hardware.touchscreen",
+    "android.hardware.camera"
+  ]
+}
